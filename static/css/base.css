@@ -1,0 +1,28 @@
+.container{
+  max-width: 600px;
+}
+.btn{
+  background: #43d9be;
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn:focus{
+  outline: none !important;
+}
+.username{
+  font-weight: bold;
+}
+.message{
+  background: #06c755;
+  color: #000000;
+  padding: 3px;
+  border-radius: 12px;
+}
+.time .updateMssg{
+  font-size: 10px;
+  color: #999;
+}
+.list-group-item{
+  background-color: #7494C0;
+}

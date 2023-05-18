@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', path='/css/base.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', path='/css/bootstrap.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- container & title -->
+  <div class="container my-4">
+    <h1 class="my-4 text-center">Nadia先生とのアラビア語レッスン</h1>
+    <!-- chat list / window -->
+    <div class="chat-window">
+      <ul class="chat-list list-group"></ul>
+    </div>
+    <!-- new chat form -->
+    <form class="new-chat my-3">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Your message:</div>
+        </div>
+        <input type="file" id="audio-file" accept="audio/*" style="display: none;" required>
+        <div class="input-group-append">
+          <button type="button" class="btn btn-info" id="recorder-button">Recorder</button>
+        </div>
+      </div>
+    </form>
+    <div class="audio-putput"></div>
+  </div>
+  <!-- <script src="{{url_for('static', path='/js/bootstrap.js')}}"></script>
+  <script src="{{url_for('static', path='/js/jquery-slim.js')}}"></script>
+  <script src="{{url_for('static', path='/js/popper.js')}}"></script> -->
+  <script src="{{url_for('static', path='/js/upload-audio.js')}}"></script>
+</body>
+</html>
